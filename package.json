@@ -1,0 +1,16 @@
+{
+  "name": "skoob",
+  "version": "1.0.0",
+  "description": "Keeping tracking of your reading",
+  "main": "index.js",
+  "author": "Richard Shea",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node src"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
