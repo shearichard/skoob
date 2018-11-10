@@ -6,13 +6,17 @@
   "author": "Richard Shea",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node src",
+    "start": "babel-node src/server",
     "test": "eslint src && flow",
     "test-hide": "eslint src && flow && jest --coverage",
-	"precommit": "yarn test",
-	"prepush": "yarn test"
+    "precommit": "yarn test",
+    "prepush": "yarn test",
+    "temp": "eslint ./src/server/render-app.js --fix"
   },
-  "dependencies": {},
+  "dependencies": {
+    "compression": "^1.7.3",
+    "express": "^4.16.4"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
